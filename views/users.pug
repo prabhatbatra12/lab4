@@ -1,0 +1,14 @@
+extends partials/header
+
+block content
+    h1 All Users Found
+    table.users
+        tr
+            th.title ID
+            th.title Username
+        each user in users
+            tr
+                td.item= user.id
+                td.item= user.username
+
+    include partials/footer
